@@ -1,0 +1,27 @@
+.Todo {
+  background-color: #8758ff;
+  text-align: center;
+  color: white;
+}
+
+.add-btn {
+  margin: 0px 0px 10px 10px;
+  height: 40px;
+  border: 1px solid white;
+}
+
+.input-todo {
+  align-items: center;
+}
+
+.filter-btn {
+  padding-bottom: 100px !important;
+}
+
+.text-center {
+  padding: 10px;
+}
+
+.btn-secondary {
+  border: 1px solid white;
+}
