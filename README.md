@@ -20,4 +20,4 @@
 
 ![Active](./src/assets/active.jpg)
 
-![Completed](./src/assets/completed.jpgg)
+![Completed](./src/assets/completed.jpg)
