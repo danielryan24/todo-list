@@ -49,7 +49,7 @@ const App = ({ todos, filter, addTodo, toggleTodo, deleteTodo, editTodo, setFilt
         </button>
       </form>
       <div className="filter">
-        <select onChange={handleFilter}>
+        <select className="option-drp" onChange={handleFilter}>
           <option value="all">All</option>
           <option value="active">Active</option>
           <option value="completed">Completed</option>
@@ -59,8 +59,9 @@ const App = ({ todos, filter, addTodo, toggleTodo, deleteTodo, editTodo, setFilt
         <ul>
           {filteredTodos.map((todo) => (
             <li key={todo.id}>
-              <input className="checkbox" type="checkbox" checked={todo.completed} onChange={() => handleToggle(todo.id)} />
-              <span style={todo.completed ? { textDecoration: "line-through" } : {}}>{todo.text}</span>
+              <span className="check" style={todo.completed ? { textDecoration: "line-through" } : {}} onClick={() => handleToggle(todo.id)}>
+                {todo.text}
+              </span>
               <button className="edit-btn" onClick={() => handleEdit(todo.id, todo.text)}>
                 Edit
               </button>
